@@ -24,9 +24,9 @@ for(i = 0; i< listaCognomi.length; i++){
     console.log(listaCognomi[i]);
 }
 
-
-
 // trovo nuova posizione di nuovoCognome
+
+// ciclo while
 
 var j=0;
 var founded = false;
@@ -40,12 +40,19 @@ while (founded == false){
     j = j + 1;
 }
 
+// ciclo for
 
-var posizione  = 0;
+posizione  = 0;
 for ( i= 0; i<listaCognomi.length; i++){
     if (nuovoCognome == listaCognomi[i]){
         posizione = parseInt(i) +1;
     }
 }
 
+console.log("il nume è in posizione " + posizione);
+
+// usando metodo indexOf
+
+posizione  = 0;
+posizione = listaCognomi.indexOf(nuovoCognome) + 1;
 console.log("il nume è in posizione " + posizione);
