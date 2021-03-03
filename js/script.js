@@ -29,14 +29,16 @@ for(i = 0; i< listaCognomi.length; i++){
 // trovo nuova posizione di nuovoCognome
 
 var j=0;
-while (nuovoCognome != listaCognomi[j]){
+var founded = false;
+var posizione  = 0;
+while (founded == false){
     if (nuovoCognome == listaCognomi[j]){
-        console.log("piero")
+        posizione = parseInt(j) +1;
+        console.log("il nume è in posizione " + posizione)
+        founded = true;
     }
     j = j + 1;
 }
-
-
 
 
 var posizione  = 0;
