@@ -46,6 +46,21 @@ while (founded == false){
     }
 }
 
+var j=0;
+var founded = false;
+var posizione  = 0;
+while (!founded){
+    if (nuovoCognome == listaCognomi[j]){
+        posizione = parseInt(j) +1;
+        console.log("il nume è in posizione " + posizione)
+        founded = true;
+    }
+    j = j + 1;
+    if (j == listaCognomi.length){
+        founded = true;
+    }
+}
+
 // ciclo for
 
 posizione  = 0;
