@@ -5,7 +5,10 @@ console.log(listaCognomi);
 
 // inserimento nuovo cognome
 
-var nuovoCognome = prompt("scrivi un nuovo cognome");
+do{
+    nuovoCognome = prompt("scrivi un nuovo cognome");
+}while (nuovoCognome == "");
+
 listaCognomi.push(nuovoCognome);
 console.log(listaCognomi);
 
@@ -38,6 +41,9 @@ while (founded == false){
         founded = true;
     }
     j = j + 1;
+    if (j == listaCognomi.length){
+        founded = true;
+    }
 }
 
 // ciclo for
