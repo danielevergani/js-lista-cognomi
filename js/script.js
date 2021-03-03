@@ -28,15 +28,16 @@ for(i = 0; i< listaCognomi.length; i++){
 
 // trovo nuova posizione di nuovoCognome
 
-/*var i = 0;
-while (nuovoCognome != listaCognomi[i]){
-
-    if (nuovoCognome == listaCognomi[i]){
-        console.log("il nome inserito è ora in posizione " + i + 1 );
-        break;
+var j=0;
+while (nuovoCognome != listaCognomi[j]){
+    if (nuovoCognome == listaCognomi[j]){
+        console.log("piero")
     }
-    i++;
-}*/
+    j = j + 1;
+}
+
+
+
 
 var posizione  = 0;
 for ( i= 0; i<listaCognomi.length; i++){
